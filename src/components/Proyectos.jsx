@@ -25,8 +25,23 @@ const Proyectos = () => {
   ];
 
   return (
-    <section id="proyectos" className="d-flex flex-column justify-content-center align-items-center text-center vh-100 bg-white">
-      <div className="container">
+    <section
+      id="proyectos"
+      className="min-vh-100 d-flex align-items-center"
+      style={{
+        background: "transparent",
+        position: "relative",
+        zIndex: 1,
+      }}
+    >
+      <div
+        className="container text-center px-5"
+        style={{
+          background: "rgba(255,255,255,0.85)",
+          borderRadius: "16px",
+          boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+        }}
+      >
         <h2 className="mb-4">Proyectos</h2>
         <div className="row">
           {proyectos.map((proyecto, index) => (

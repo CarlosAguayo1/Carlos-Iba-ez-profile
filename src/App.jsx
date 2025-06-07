@@ -5,7 +5,6 @@ import About from "./components/About";
 import Experiencia from "./components/Experiencia";
 import Proyectos from "./components/Proyectos";
 import Contacto from "./components/Contacto";
-import Fondo from "./components/Fondo";
 import Footer from "./components/Footer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -13,7 +12,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <Fondo />
        <Navbar />
         <Header />
         <About />

@@ -3,7 +3,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark fixed-top"
+      style={{
+        background: "rgba(33,37,41,0.85)", // Semitransparente, igual que bg-dark pero con opacidad
+        boxShadow: "0 4px 24px rgba(0,0,0,0.08)",
+        zIndex: 2, // Asegura que esté por encima del fondo de partículas
+      }}
+    >
       <div className="container">
         <a className="navbar-brand fw-bold" href="#">Carlos Ibáñez</a>
         <button
